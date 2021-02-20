@@ -10,6 +10,24 @@ header {
   background-attachment: fixed;
   background-size: cover;
 }
+#activities header {
+  background: no-repeat lightgrey url(images/runfly.jpg);
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#contact header {
+  background: no-repeat lightgrey url(images/cliff_rock.jpg);
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#cliffs header {
+  background: no-repeat lightgrey url(images/forest_cliff.jpg);
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+}
 /* .main-header {
   width: 700px;
   margin: 2em auto 0 auto;
@@ -22,16 +40,11 @@ header {
   margin: 0 2em 0 0;
   float: left;
 } */
-.navbar-brand {
-  margin: 0 2em 0 0;
-  float: left;
-}
-
 /* Navigation */
 .navbar {
   width: fit-content;
   min-height: 100px;
-  margin: 2em auto 0 auto;
+  margin: 2.5em auto;
 }
 .nav-item {
   padding-left: 25px;
@@ -40,6 +53,10 @@ header {
   line-height: 100px;
   text-transform: uppercase;
   font-size: 14px;
+}
+.navbar-brand {
+  margin: 0 2em 0 0;
+  float: left;
 }
 .nav-link {
   text-decoration: none;
@@ -163,6 +180,23 @@ form {
   padding: 0.5em;
 }
 
+/*Clock Design*/
+#timeofday {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  height: 70px;
+  color: #3a3a3a;
+  padding-top: 30px;
+  background: linear-gradient(
+    0deg,
+    rgba(251, 215, 139, 1) 0%,
+    rgba(118, 213, 245, 1) 100%
+  );
+}
+#clock {
+  color: #125688;
+}
+
 /* Home */
 
 /* ACTIVATE BELOW WHEN TESTING NAVIGATION AND OTHERS FOR RWD */
@@ -206,4 +240,67 @@ form {
     min-height: 450px;
     margin-top: 1em;
   }
+}
+
+/*Activites*/
+thead {
+  text-align: center;
+  background: #bde1ff;
+}
+tbody {
+  background: #eeffe6;
+  text-align: center;
+}
+th,
+td {
+  vertical-align: middle;
+  border: solid 1px #852b1b;
+}
+th:first-child {
+  background: #4977d1;
+  color: #fff;
+}
+td:first-child {
+  font-weight: bold;
+  background: #bde1ff;
+}
+/*Display result styling*/
+/*jQuery activities styling*/
+.selected {
+  background-color: #9ed034;
+  color: #fff;
+  font-weight: bold;
+}
+
+/*Cliffs Image List*/
+.list-image {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 900px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.list-image li {
+  display: inline-block;
+  width: 400px;
+  margin: 0 12px 30px;
+}
+.list-image img {
+  width: 100%;
+  height: auto;
+}
+.list-image .piccaption h3 {
+  padding-top: 6px;
+  padding-left: 0;
+  display: block;
+  font-size: 1.2em;
+  margin: 0 0 3px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: #852b1b;
+  height: 30px;
+  color: #fff;
+  font-weight: bold;
 }
